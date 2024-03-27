@@ -9,7 +9,6 @@ import (
 
 func TestSearch(t *testing.T) {
 	client := yelp.New(yelp.ConfigFromEnv())
-	client.Debug = true
 
 	res, err := Search(client, SearchRequest{
 		Location: "Idaho Falls",
