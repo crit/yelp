@@ -36,8 +36,8 @@ type Business struct {
 		State          string      `json:"state"`
 		DisplayAddress []string    `json:"display_address"`
 	} `json:"location"`
-	Phone        string            `json:"phone"`
-	DisplayPhone string            `json:"display_phone"`
-	Distance     float64           `json:"distance"`
-	Attributes   map[string]string `json:"attributes"`
+	Phone        string         `json:"phone"`
+	DisplayPhone string         `json:"display_phone"`
+	Distance     float64        `json:"distance"`
+	Attributes   map[string]any `json:"attributes"`
 }
